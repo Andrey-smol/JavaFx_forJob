@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<GridPane
+        fx:id="root"
+        xmlns="http://javafx.com/javafx"
+        xmlns:fx="http://javafx.com/fxml"
+        fx:controller="FXMLMainGUIController"
+        stylesheets="@Style/styleUserGUI.css">
+    <children>
+        <Label fx:id="welcom" text="Welcom" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
+        <Label text="IP Host" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <TextField
+            fx:id="ipHostText"
+            GridPane.columnIndex="1"
+            GridPane.rowIndex="1"
+            onKeyPressed="#clearMessage"/>
+
+        <Label text="Port" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <TextField
+            fx:id="portHostText"
+            GridPane.columnIndex="1"
+            GridPane.rowIndex="2"
+            onKeyPressed="#clearMessage"/>
+        <Button
+            fx:id="signIn"
+            text="Sign in"
+            GridPane.columnIndex="1"
+            GridPane.rowIndex="3"
+            GridPane.halignment="RIGHT"
+            onAction="#connectServer"/>
+
+        <Text fx:id="message" GridPane.columnIndex="0" GridPane.rowIndex="5" GridPane.columnSpan="2"/>
+    </children>
+
+</GridPane>
