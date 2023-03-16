@@ -1,13 +1,14 @@
+
+
+import java.io.IOException;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import java.io.IOException;
-
 public class MainGUI extends Application {
-
 
     @Override
     public void start(Stage stage) {
@@ -19,6 +20,8 @@ public class MainGUI extends Application {
             Scene scene = new Scene(parent);
             stage.setTitle("Connect Server");
             stage.setScene(scene);
+            FXMLMainGUIController controller = loader.getController();
+            controller.setStage(stage);
             stage.show();
 
         }

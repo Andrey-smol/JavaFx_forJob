@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="FXMLAnalogGUIController"
+            stylesheets="@Style/styleUserGUI.css">
+
+    <children>
+        <VBox>
+            <fx:define>
+                <ToggleGroup fx:id="group"/>
+            </fx:define>
+            <HBox>
+                <RadioButton fx:id="rbutton1" toggleGroup="$group" onAction="#change4000"/>
+                <Label text="4000"/>
+            </HBox>
+            <HBox>
+                <RadioButton fx:id="rbutton2" toggleGroup="$group" onAction="#change10000"/>
+                <Label text="10000"/>
+            </HBox>
+            <HBox>
+                <RadioButton fx:id="rbutton3" toggleGroup="$group" onAction="#change15000"/>
+                <Label text="15000"/>
+            </HBox>
+            <HBox>
+                <RadioButton fx:id="rbutton4" toggleGroup="$group" onAction="#change20000"/>
+                <Label text="20000"/>
+            </HBox>
+            <HBox>
+                <RadioButton fx:id="rbutton5" toggleGroup="$group" onAction="#change0"/>
+                <Label text="0"/>
+            </HBox>
+
+            <Button fx:id="abutton" text="Запрос данных"/>
+        </VBox>
+    </children>
+</AnchorPane>

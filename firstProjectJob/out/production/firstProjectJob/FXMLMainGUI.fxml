@@ -10,7 +10,7 @@
         fx:controller="FXMLMainGUIController"
         stylesheets="@Style/styleUserGUI.css">
     <children>
-        <Label fx:id="welcom" text="Welcom" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
+        <Label fx:id="welcome" text="Welcom" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
         <Label text="IP Host" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
         <TextField
             fx:id="ipHostText"

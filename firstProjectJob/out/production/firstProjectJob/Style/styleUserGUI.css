@@ -45,8 +45,9 @@ GridPane{
 
 
 HBox{
- -fx-pref-height: 600;
- -fx-pref-width: 900;
+ /*-fx-pref-height: 600;
+ -fx-pref-width: 900;*/
+ -fx-spacing: 10px;
  -fx-padding: 10px;
  -fx-background-color: linear-gradient(to bottom,#fff8dc,#ffe4c4);
 }
@@ -68,8 +69,8 @@ HBox{
 }
 
 VBox{
-  -fx-pref-height: 300;
-  -fx-pref-width: 700;
+  /*-fx-pref-height: 300;
+  -fx-pref-width: 700;*/
   -fx-padding: 5px;
 }
 VBox .menu-bar{
@@ -98,6 +99,20 @@ VBox .table-view .table-cell{
 VBox .table-row-cell:selected {
    -fx-background-color: #add8e6;
 }
+AnchorPane{
+ -fx-min-height: 300.0;
+ -fx-min-width: 700.0;
+}
+
+AnchorPane VBox{
+  -fx-spacing:10px;
+  -fx-margin:10px;
+}
+AnchorPane VBox .button{
+ -fx-max-width:10000px;
+}
+
+
 
 
 

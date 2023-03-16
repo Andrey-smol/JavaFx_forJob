@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="FXMLClientGUIController"
+            stylesheets="@Style/styleUserGUI.css"
+            fx:id="anchor">
+
+    <children>
+        <HBox AnchorPane.topAnchor="5" AnchorPane.bottomAnchor="5" AnchorPane.rightAnchor="5" AnchorPane.leftAnchor="5">
+                <TextArea fx:id="mess" />
+                <VBox id="vClient" HBox.hgrow="ALWAYS">
+                    <Button fx:id="com1" text="Статус" onAction="#getStatus"/>
+                    <Button fx:id="com2" text="Логирование" onAction="#getLog"/>
+                    <Button fx:id="com11" text="анфлоговые выхода" onAction="#setAnalogOutput"/>
+                    <Button fx:id="com12" text="дискретные выхода" onAction="#setDigitalOutput"/>
+                    <Button fx:id="com13" text="частотные выхода" onAction="#setFrequencyOutput"/>
+                    <Button fx:id="3" text="сетевые настройки" onAction="#setNetwork"/>
+                    <Button fx:id="com4" text="запрос сетевых настроек" onAction="#getNetwork"/>
+                    <Button fx:id="com20" text="обновление прошивки" onAction="#updata"/>
+                </VBox>
+        </HBox>
+    </children>
+
+</AnchorPane>
